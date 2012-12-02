@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Demo Style */
+body{
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background: #fff;
+	font-weight: 400;
+	font-size: 15px;
+	color: #1d3c41;
+}
+.clr{
+	clear: both;
+}
+
+/* remove codrops styles and reset the whole thing */
+#container_demo{
+	 text-align: left;
+	 padding: 0;
+	 margin: 0 auto;
+	 font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+}
+
+/** fonts used for the icons **/ 
+@font-face {
+    font-family: 'FontomasCustomRegular';
+    src: url('fonts/fontomas-webfont.eot');
+    src: url('fonts/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fontomas-webfont.woff') format('woff'),
+         url('fonts/fontomas-webfont.ttf') format('truetype'),
+         url('fonts/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FranchiseRegular';
+    src: url('fonts/franchise-bold-webfont.eot');
+    src: url('fonts/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/franchise-bold-webfont.woff') format('woff'),
+         url('fonts/franchise-bold-webfont.ttf') format('truetype'),
+         url('fonts/franchise-bold-webfont.svg#FranchiseRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/** The login that will contain our two forms **/
+#login{
+	margin: 0px auto;	
+	width: 300px;
+	position: relative;
+}
+
+/**** general text styling ****/
+#login h1{
+	font-size: 48px;
+	color: #333;
+	padding: 10px 0 20px 0;
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+/** For the moment only webkit supports the background-clip:text; */
+
+#login p{
+	margin-bottom:15px;
+}
+#login p:first-child{
+	margin: 0px;
+}
+#login label{
+	color: rgb(64, 92, 96);
+	position: relative;
+	font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/* Login Validation */
+#success, #error{
+	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width: 300px;
+	margin: 10px 0;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	padding: 5px 10px;
+	text-align: left;
+}
+
+#success {
+	border: 1px solid green;
+	background-color: #AFA;
+	color: green;
+}
+
+#error {
+	border: 1px solid #F00;
+	background-color: #FCF;
+	color: red;
+}
+
+input, select {
+  outline: none;
+}
+
+/* all the input except submit and checkbox */
+#login input, #login select {
+	width: 300px;
+	margin-top: 4px;	
+	border: 1px solid #333;
+}
+#login select {
+	padding: 10px 5px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-sizing: content-box;
+	  -moz-box-sizing : content-box;
+	       box-sizing : content-box;
+}
+#login input {
+	padding: 10px 5px 10px 32px;
+	-webkit-appearance: field;
+	-webkit-box-sizing: content-box;
+	  -moz-box-sizing : content-box;
+	       box-sizing : content-box;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+#login input:active, #login input:focus{
+	border: 1px solid #333;
+	background: rgba(238, 236, 240, 0.2);	
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+} 
+
+/** the magic icon trick ! **/
+[data-icon]:after {
+    content: attr(data-icon);
+    font-family: 'FontomasCustomRegular';
+    color: #EE3C09;
+    position: absolute;
+    left: 10px;
+    top: 35px;
+	width: 30px;
+}
+
+/*styling both submit buttons */
+#login p.button input{
+	width: 100px;
+	cursor: pointer;	
+	background: rgb(33, 33, 33);
+	padding: 5px 10px;
+	font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+	color: #fff;
+	font-size: 24px;	
+	border: 1px solid #333;	
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;	
+	-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+	        0px 0px 0px 3px rgb(254, 254, 254),
+	        0px 5px 3px 3px rgb(210, 210, 210);
+	   -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+	        0px 0px 0px 3px rgb(254, 254, 254),
+	        0px 5px 3px 3px rgb(210, 210, 210);
+	        box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+	        0px 0px 0px 3px rgb(254, 254, 254),
+	        0px 5px 3px 3px rgb(210, 210, 210);
+}
+#login p.button input:hover{
+	background: -moz-linear-gradient(top, #EE3C09, #B90A09);
+	background: -webkit-linear-gradient(top, #EE3C09, #B90A09);
+}
+#login p.button input:active,
+#login p.button input:focus{
+	background: -moz-linear-gradient(top, #B90A09, #EE3C09);
+	background: -webkit-linear-gradient(top, #B90A09, #EE3C09);
+	position: relative;
+	top: 1px;
+	border: 1px solid #333;	
+	-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	   -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	        box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+p.login.button{
+	text-align: right;
+}
+
+/** Styling both forms **/
+#login{
+	position: absolute;
+	width: 336px;	
+	padding: 10px 30px;
+	background: rgb(247, 247, 247);
+	border: 1px solid #333;
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 5px;
+	-moz-border-radius: 5px;
+		 border-radius: 5px;
+}
+
+/** IE fixes **/
+
+.lt8 #login input{
+	padding: 10px 5px 10px 32px;
+    width: 92%;
+}
+.lt8 #login h1{
+	color: #066A75;
+}
+.lt8 p.change_link,
+.ie9 p.change_link{
+	position: absolute;
+	height: 90px;
+	background: transparent;
+}
