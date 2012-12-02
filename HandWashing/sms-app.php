@@ -80,16 +80,16 @@
         </p>
         <p>
             <label>Number [if sending to one]:</label><br/>
-            <input type="text" size="3" name="numberext" class="text" required /> - 
-            <input type="text" name="number" class="text" required/>
+            <input type="text" size="3" name="numberext" class="text" /> - 
+            <input type="text" name="number" class="text"/>
         </p>
         <p>
             <label>Sender:</label><br />
-            <input type="text" name="from" class="text2" required />
+            <input type="text" name="from" class="text2"  />
         </p>
         <p>
             <label>Message:</label><br />
-            <textarea name="message" require></textarea>
+            <textarea name="message" ></textarea>
             <input type="hidden" name="submitted" value="true" />
         </p>
         <p>

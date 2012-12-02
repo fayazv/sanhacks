@@ -27,7 +27,7 @@
                 $query .= "VALUES ('','$sname', '$equipment', '$condition', '$gender', NOW(), '$comments')";
 				
 				//echo $query;
-
+				
                 $insert = mysql_query($query);
 				if (!$insert) {
 				  $message = "Problem saving information.";

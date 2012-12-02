@@ -34,7 +34,9 @@
             </ul>
             <!-- /.contacts -->
             <h3>Miscellaneous info:</h3>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+            <p>Please, do not hesitate to contact us, we are friendly people: info@iwash.com</p>
+			<p>If you have a feature or support request, or want to give us feedback, please contact us.If you want to be updated about the development of iwash and the current service status you can follow @iwash on Twitter.</p>
+	 <p>You can also contact us for services or consulting. We offer not only deep PDF expertise but also many years' professional experience in a wide variety of technologies.</p>
           </aside>
           <!-- content -->
           <section id="content">
